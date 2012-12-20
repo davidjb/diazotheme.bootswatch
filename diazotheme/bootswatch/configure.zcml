@@ -1,0 +1,94 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="diazotheme.bootstrap">
+
+  <five:registerPackage package="." />
+
+  <plone:static directory="amalia" name="amalia" type="theme" />
+  <plone:static directory="cerulean" name="cerulean" type="theme" />
+  <plone:static directory="cosmo" name="cosmo" type="theme" />
+  <plone:static directory="cyborg" name="cyborg" type="theme" />
+  <plone:static directory="journal" name="journal" type="theme" />
+  <plone:static directory="readable" name="readable" type="theme" />
+  <plone:static directory="simplex" name="simplex" type="theme" />
+  <plone:static directory="slate" name="slate" type="theme" />
+  <plone:static directory="spacelab" name="spacelab" type="theme" />
+  <plone:static directory="spruce" name="spruce" type="theme" />
+  <plone:static directory="superhero" name="superhero" type="theme" />
+  <plone:static directory="united" name="united" type="theme" />
+
+  <!-- Reusable resources separated from the themes 
+  <plone:static directory="plone" name="plone" type="resource" />
+  <plone:static directory="bootstrap" name="bootstrap" type="framework" />
+  -->
+
+  <!--
+  <plone:static directory="default-hero" name="bootstrap_hero" type="theme" />
+  <plone:static directory="default-marketing" name="bootstrap_marketing" type="theme" />
+    <plone:static directory="default-carousel" name="bootstrap_carousel" type="theme" />
+  -->
+  <!-- Don't see an application with standard plone yet -->
+
+  <!-- Amalia -->
+  <!-- Cerulean 
+  <plone:static directory="amalia-hero" name="amalia_hero" type="theme" />
+  <plone:static directory="amalia-marketing" name="amalia_marketing" type="theme" />
+
+  <plone:static directory="cerulean-hero" name="cerulean_hero" type="theme" />
+  <plone:static directory="cerulean-marketing" name="cerulean_marketing" type="theme" />
+  -->
+
+  <!-- Cosmo 
+  <plone:static directory="cosmo-hero" name="cosmo_hero" type="theme" />
+  <plone:static directory="cosmo-marketing" name="cosmo_marketing" type="theme" />
+  -->
+
+  <!-- Cyborg 
+  <plone:static directory="cyborg-hero" name="cyborg_hero" type="theme" />
+  <plone:static directory="cyborg-marketing" name="cyborg_marketing" type="theme" />
+  -->
+
+  <!-- Journal 
+  <plone:static directory="journal-hero" name="journal_hero" type="theme" />
+  <plone:static directory="journal-marketing" name="journal_marketing" type="theme" />
+  -->
+
+  <!-- Readable 
+  <plone:static directory="readable-hero" name="readable_hero" type="theme" />
+  <plone:static directory="readable-marketing" name="readable_marketing" type="theme" />
+  -->
+
+  <!-- Simplex 
+  <plone:static directory="simplex-hero" name="simplex_hero" type="theme" />
+  <plone:static directory="simplex-marketing" name="simplex_marketing" type="theme" />
+  -->
+
+  <!-- Slate 
+  <plone:static directory="slate-hero" name="slate_hero" type="theme" />
+  <plone:static directory="slate-marketing" name="slate_marketing" type="theme" />
+  -->
+
+  <!-- Spacelab 
+  <plone:static directory="spacelab-hero" name="spacelab_hero" type="theme" />
+  <plone:static directory="spacelab-marketing" name="spacelab_marketing" type="theme" />
+  -->
+
+  <!-- Spruce 
+  <plone:static directory="spruce-hero" name="spruce_hero" type="theme" />
+  <plone:static directory="spruce-marketing" name="spruce_marketing" type="theme" />
+  -->
+
+  <!-- Superhero 
+  <plone:static directory="superhero-hero" name="superhero_hero" type="theme" />
+  <plone:static directory="superhero-marketing" name="superhero_marketing" type="theme" />
+  -->
+
+  <!-- United 
+  <plone:static directory="united-hero" name="united_hero" type="theme" />
+  <plone:static directory="united-marketing" name="united_marketing" type="theme" />
+  -->
+
+</configure>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:css="http://namespaces.plone.org/diazo/css"
+       xmlns:xhtml="http://www.w3.org/1999/xhtml"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"    
+       xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <!-- The condition makes sure that theme is only applied when served in the 
+       plone main_template. This is necessary for functional edit popups in 
+       Tiny, for example. -->
+  <theme href="++theme++bootstrap/index.html" css:if-content="#visual-portal-wrapper"/>
+
+  <!-- Head rules
+       ================================================================== -->
+  <xi:include href="++theme++bootstrap/rules/head-base.xml"/>
+
+  <!-- Framework styles -->
+  <replace css:theme="head link[href*='bootstrap.css']">
+      <link href="++theme++readable/css/bootstrap.min.css" rel="stylesheet"/>
+  </replace>
+
+  <!-- Style -->
+  <replace css:theme="head style">
+      <style>
+          body { padding-top: 80px; }
+          button + button { margin-left: .5em; }
+          .ploneCalendar { width: 100%; }
+          .ploneCalendar th { text-align: left; }
+          .ploneCalendar td { text-align: right; }
+          .ploneCalendar td[class*=today] { font-size: 150%; }
+          .calendarHeader { text-align: center; }
+          .criteria > select, .criteria > input, .criteria > button, .criteria > div { float: left; margin: 0; }
+          .criteria > div:first-child { float: none; margin: 1em 0; }
+          .criteria, .sortingField { clear: both; }
+          .hiddenStructure { display: block; background: transparent; background-image: none; border: none; height: 0.1em; overflow: hidden; padding: 0; margin: -0.1em 0 0 -0.1em; width: 1px; position: absolute; }
+          #content .searchField[type='text'] { margin: 0 .5em 0 0; }
+          #content .searchPage { margin: 0 .5em 0 0; }
+          #calendar-previous { float: left; }
+          #calendar-next { float: right; }
+          #calendar-previous, #calendar-next { text-decoration: none; }
+          #searchbox_currentfolder_only_label { margin: 5px; }
+          #portal-columns, #portal-header { margin-bottom: 2em; }
+          #kss-spinner { display: none; }
+          input[type='checkbox'] { margin-right: .5em; }
+      </style>
+  </replace>
+
+  <!-- Body rules
+       ================================================================== -->
+  <replace css:content="#portal-logo > img">
+      <img src="++theme++bootstrap/plone/logo/black/plone-logo-56.png"/>
+  </replace>
+       
+  <xi:include href="++theme++bootstrap/rules/header.xml"/>
+  <xi:include href="++theme++bootstrap/rules/columns.xml"/>
+  <xi:include href="++theme++bootstrap/rules/content.xml"/>
+  <xi:include href="++theme++bootstrap/rules/forms.xml"/>
+  <xi:include href="++theme++bootstrap/rules/portlets.xml"/>
+  <xi:include href="++theme++bootstrap/rules/edit.xml"/>
+  <xi:include href="++theme++bootstrap/rules/footer-inverse.xml"/>
+  <xi:include href="++theme++bootstrap/rules/general.xml"/>
+
+  <!-- Place the content 
+       .................................................................. -->
+  <drop css:theme-children="body"/>
+  <before css:theme-children="body" css:content-children="body"/>
+  <after css:theme-children="body">
+      <script src="++theme++bootstrap/js/bootstrap.min.js"></script>
+  </after>
+
+</rules>
