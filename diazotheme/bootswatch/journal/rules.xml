@@ -8,11 +8,11 @@
   <!-- The condition makes sure that theme is only applied when served in the 
        plone main_template. This is necessary for functional edit popups in 
        Tiny, for example. -->
-  <theme href="++theme++bootstrap/index.html" css:if-content="#visual-portal-wrapper"/>
+  <theme href="++theme++bootstrap-framework/index.html" css:if-content="#visual-portal-wrapper"/>
 
   <!-- Head rules
        ================================================================== -->
-  <xi:include href="++theme++bootstrap/rules/head-base.xml"/>
+  <xi:include href="++theme++bootstrap-framework/rules/head-base.xml"/>
 
   <!-- Framework styles -->
   <replace css:theme="head link[href*='bootstrap.css']">
@@ -48,24 +48,24 @@
   <!-- Body rules
        ================================================================== -->
   <replace css:content="#portal-logo > img">
-      <img src="++theme++bootstrap/plone/logo/black/plone-logo-56.png"/>
+      <img src="++theme++bootstrap-framework/plone/logo/black/plone-logo-56.png"/>
   </replace>
        
-  <xi:include href="++theme++bootstrap/rules/header.xml"/>
-  <xi:include href="++theme++bootstrap/rules/columns.xml"/>
-  <xi:include href="++theme++bootstrap/rules/content.xml"/>
-  <xi:include href="++theme++bootstrap/rules/forms.xml"/>
-  <xi:include href="++theme++bootstrap/rules/portlets.xml"/>
-  <xi:include href="++theme++bootstrap/rules/edit.xml"/>
-  <xi:include href="++theme++bootstrap/rules/footer-inverse.xml"/>
-  <xi:include href="++theme++bootstrap/rules/general.xml"/>
+  <xi:include href="++theme++bootstrap-framework/rules/header.xml"/>
+  <xi:include href="++theme++bootstrap-framework/rules/columns.xml"/>
+  <xi:include href="++theme++bootstrap-framework/rules/content.xml"/>
+  <xi:include href="++theme++bootstrap-framework/rules/forms.xml"/>
+  <xi:include href="++theme++bootstrap-framework/rules/portlets.xml"/>
+  <xi:include href="++theme++bootstrap-framework/rules/edit.xml"/>
+  <xi:include href="++theme++bootstrap-framework/rules/footer-inverse.xml"/>
+  <xi:include href="++theme++bootstrap-framework/rules/general.xml"/>
 
   <!-- Place the content 
        .................................................................. -->
   <drop css:theme-children="body"/>
   <before css:theme-children="body" css:content-children="body"/>
   <after css:theme-children="body">
-      <script src="++theme++bootstrap/js/bootstrap.min.js"></script>
+      <script src="++theme++bootstrap-framework/js/bootstrap.min.js"></script>
   </after>
 
 </rules>
