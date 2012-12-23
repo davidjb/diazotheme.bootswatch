@@ -8,17 +8,30 @@
   <five:registerPackage package="." />
 
   <plone:static directory="amalia" name="amalia" type="theme" />
+  <plone:static directory="amalia-narrow" name="amalia-narrow" type="theme" />
   <plone:static directory="cerulean" name="cerulean" type="theme" />
+  <plone:static directory="cerulean-narrow" name="cerulean-narrow" type="theme" />
   <plone:static directory="cosmo" name="cosmo" type="theme" />
+  <plone:static directory="cosmo-narrow" name="cosmo-narrow" type="theme" />
   <plone:static directory="cyborg" name="cyborg" type="theme" />
+  <plone:static directory="cyborg-narrow" name="cyborg-narrow" type="theme" />
   <plone:static directory="journal" name="journal" type="theme" />
+  <plone:static directory="journal-narrow" name="journal-narrow" type="theme" />
   <plone:static directory="readable" name="readable" type="theme" />
+  <plone:static directory="readable-narrow" name="readable-narrow" type="theme" />
   <plone:static directory="simplex" name="simplex" type="theme" />
+  <plone:static directory="simplex-narrow" name="simplex-narrow" type="theme" />
   <plone:static directory="slate" name="slate" type="theme" />
+  <plone:static directory="slate-narrow" name="slate-narrow" type="theme" />
   <plone:static directory="spacelab" name="spacelab" type="theme" />
+  <plone:static directory="spacelab-narrow" name="spacelab-narrow" type="theme" />
   <plone:static directory="spruce" name="spruce" type="theme" />
+  <plone:static directory="spruce-narrow" name="spruce-narrow" type="theme" />
   <plone:static directory="superhero" name="superhero" type="theme" />
+  <plone:static directory="superhero-narrow" name="superhero-narrow" type="theme" />
   <plone:static directory="united" name="united" type="theme" />
+  <plone:static directory="united-narrow" name="united-narrow" type="theme" />
+  
 
   <!-- Reusable resources separated from the themes 
   <plone:static directory="plone" name="plone" type="resource" />

@@ -8,7 +8,7 @@
   <!-- The condition makes sure that theme is only applied when served in the 
        plone main_template. This is necessary for functional edit popups in 
        Tiny, for example. -->
-  <theme href="++theme++bootstrap-framework/examples/starter-template.html" 
+  <theme href="++theme++bootstrap-framework/examples/marketing-narrow.html" 
          css:if-content="#visual-portal-wrapper"/>
 
   <!-- Head rules
@@ -17,31 +17,12 @@
 
   <!-- Framework styles -->
   <replace css:theme="head link[href*='bootstrap.css']">
-      <link href="++theme++amalia/css/bootstrap.min.css" rel="stylesheet"/>
+      <link href="++theme++slate/css/bootstrap.min.css" rel="stylesheet"/>
   </replace>
 
-  <!-- Style -->
+  <!-- Add to the style tag -->
   <after css:theme-children="head style">
-      body { padding-top: 80px; }
-      button + button { margin-left: .5em; }
-      .ploneCalendar { width: 100%; }
-      .ploneCalendar th { text-align: left; }
-      .ploneCalendar td { text-align: right; }
-      .ploneCalendar td[class*=today] { font-size: 150%; }
-      .calendarHeader { text-align: center; }
-      .criteria > select, .criteria > input, .criteria > button, .criteria > div { float: left; margin: 0; }
-      .criteria > div:first-child { float: none; margin: 1em 0; }
-      .criteria, .sortingField { clear: both; }
-      .hiddenStructure { display: block; background: transparent; background-image: none; border: none; height: 0.1em; overflow: hidden; padding: 0; margin: -0.1em 0 0 -0.1em; width: 1px; position: absolute; }
-      #content .searchField[type='text'] { margin: 0 .5em 0 0; }
-      #content .searchPage { margin: 0 .5em 0 0; }
-      #calendar-previous { float: left; }
-      #calendar-next { float: right; }
-      #calendar-previous, #calendar-next { text-decoration: none; }
-      #searchbox_currentfolder_only_label { margin: 5px; }
-      #portal-columns, #portal-header { margin-bottom: 2em; }
-      #kss-spinner { display: none; }
-      input[type='checkbox'] { margin-right: .5em; }
+      .masthead .nav { margin-top: 16px; margin-bottom: 0; }
   </after>
 
   <!-- Body rules
@@ -50,16 +31,16 @@
       <img src="++theme++bootstrap-framework/plone/logo/white/plone-logo-56.png"/>
   </replace>
        
-  <xi:include href="++theme++bootstrap-framework/rules/header.xml"/>
+  <xi:include href="++theme++bootstrap-framework/rules/header-narrow.xml"/>
   <xi:include href="++theme++bootstrap-framework/rules/grid.xml"/>
   <xi:include href="++theme++bootstrap-framework/rules/columns.xml"/>
-  <xi:include href="++theme++bootstrap-framework/rules/lead-hero.xml"/>
+  <xi:include href="++theme++bootstrap-framework/rules/lead-jumbotron.xml"/>
   <xi:include href="++theme++bootstrap-framework/rules/content.xml"/>
   <xi:include href="++theme++bootstrap-framework/rules/forms.xml"/>
   <xi:include href="++theme++bootstrap-framework/rules/portlets.xml"/>
-  <xi:include href="++theme++bootstrap-framework/rules/edit.xml"/>
-  <xi:include href="++theme++bootstrap-framework/rules/footer-inverse.xml"/>
-  <xi:include href="++theme++bootstrap-framework/rules/general.xml"/>
+  <xi:include href="++theme++bootstrap-framework/rules/no-edit.xml"/>
+  <xi:include href="++theme++bootstrap-framework/rules/footer-narrow.xml"/>
+  <xi:include href="++theme++bootstrap-framework/rules/general-narrow.xml"/>
 
   <!-- Place the content 
        .................................................................. -->
@@ -68,5 +49,5 @@
   <after css:theme-children="body">
       <script src="++theme++bootstrap-framework/js/bootstrap.min.js"></script>
   </after>
-
+  
 </rules>

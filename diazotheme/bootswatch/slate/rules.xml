@@ -8,7 +8,7 @@
   <!-- The condition makes sure that theme is only applied when served in the 
        plone main_template. This is necessary for functional edit popups in 
        Tiny, for example. -->
-  <theme href="++theme++bootstrap-framework/index.html" css:if-content="#visual-portal-wrapper"/>
+  <theme href="++theme++bootstrap-framework/examples/starter-template.html" css:if-content="#visual-portal-wrapper"/>
 
   <!-- Head rules
        ================================================================== -->
@@ -21,7 +21,6 @@
 
   <!-- Style -->
   <replace css:theme="head style">
-      <style>
           body { padding-top: 80px; }
           button + button { margin-left: .5em; }
           .ploneCalendar { width: 100%; }
@@ -42,7 +41,6 @@
           #portal-columns, #portal-header { margin-bottom: 2em; }
           #kss-spinner { display: none; }
           input[type='checkbox'] { margin-right: .5em; }
-      </style>
   </replace>
 
   <!-- Body rules
@@ -52,7 +50,9 @@
   </replace>
        
   <xi:include href="++theme++bootstrap-framework/rules/header.xml"/>
+  <xi:include href="++theme++bootstrap-framework/rules/grid.xml"/>
   <xi:include href="++theme++bootstrap-framework/rules/columns.xml"/>
+  <xi:include href="++theme++bootstrap-framework/rules/lead-hero.xml"/>
   <xi:include href="++theme++bootstrap-framework/rules/content.xml"/>
   <xi:include href="++theme++bootstrap-framework/rules/forms.xml"/>
   <xi:include href="++theme++bootstrap-framework/rules/portlets.xml"/>
