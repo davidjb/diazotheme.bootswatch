@@ -27,9 +27,7 @@
 
   <!-- Body rules
        ================================================================== -->
-  <replace css:content="#portal-logo > img">
-      <img src="++theme++bootstrap-framework/plone/logo/black/plone-logo-56.png"/>
-  </replace>
+  <xi:include href="++theme++plone/rules/logo/black-56.xml"/>
 
   <xi:include href="++theme++bootstrap-framework/rules/header-narrow.xml"/>
   <xi:include href="++theme++bootstrap-framework/rules/grid.xml"/>

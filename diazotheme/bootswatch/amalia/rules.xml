@@ -46,10 +46,8 @@
 
   <!-- Body rules
        ================================================================== -->
-  <replace css:content="#portal-logo > img">
-      <img src="++theme++bootstrap-framework/plone/logo/white/plone-logo-56.png"/>
-  </replace>
-       
+  <xi:include href="++theme++plone/rules/logo/white-56.xml"/>
+  
   <xi:include href="++theme++bootstrap-framework/rules/header.xml"/>
   <xi:include href="++theme++bootstrap-framework/rules/grid.xml"/>
   <xi:include href="++theme++bootstrap-framework/rules/columns.xml"/>
