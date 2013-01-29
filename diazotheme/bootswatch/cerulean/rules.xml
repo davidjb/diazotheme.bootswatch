@@ -20,7 +20,7 @@
   </replace>
 
   <!-- Style -->
-  <after css:theme-children="head style">
+  <copy css:theme="head style">
       body { padding-top: 80px; }
       button + button { margin-left: .5em; }
       .ploneCalendar { width: 100%; }
@@ -41,7 +41,7 @@
       #portal-columns, #portal-header { margin-bottom: 2em; }
       #kss-spinner { display: none; }
       input[type='checkbox'] { margin-right: .5em; }
-  </after>
+  </copy>
 
   <!-- Body rules
        ================================================================== -->

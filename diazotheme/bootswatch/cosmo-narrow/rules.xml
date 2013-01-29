@@ -27,6 +27,8 @@
 
   <!-- Body rules
        ================================================================== -->
+  <xi:include href="++theme++plone/rules/logo/black-56.xml"/>
+
   <xi:include href="++theme++bootstrap-framework/rules/header-narrow.xml"/>
   <xi:include href="++theme++bootstrap-framework/rules/grid.xml"/>
   <xi:include href="++theme++bootstrap-framework/rules/columns.xml"/>

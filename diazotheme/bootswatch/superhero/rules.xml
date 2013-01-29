@@ -20,35 +20,33 @@
   </replace>
 
   <!-- Style -->
-  <replace css:theme="head style">
-          body { padding-top: 80px; }
-          button + button { margin-left: .5em; }
-          .ploneCalendar { width: 100%; }
-          .ploneCalendar th { text-align: left; }
-          .ploneCalendar td { text-align: right; }
-          .ploneCalendar td[class*=today] { font-size: 150%; }
-          .calendarHeader { text-align: center; }
-          .criteria > select, .criteria > input, .criteria > button, .criteria > div { float: left; margin: 0; }
-          .criteria > div:first-child { float: none; margin: 1em 0; }
-          .criteria, .sortingField { clear: both; }
-          .hiddenStructure { display: block; background: transparent; background-image: none; border: none; height: 0.1em; overflow: hidden; padding: 0; margin: -0.1em 0 0 -0.1em; width: 1px; position: absolute; }
-          #content .searchField[type='text'] { margin: 0 .5em 0 0; }
-          #content .searchPage { margin: 0 .5em 0 0; }
-          #calendar-previous { float: left; }
-          #calendar-next { float: right; }
-          #calendar-previous, #calendar-next { text-decoration: none; }
-          #searchbox_currentfolder_only_label { margin: 5px; }
-          #portal-columns, #portal-header { margin-bottom: 2em; }
-          #kss-spinner { display: none; }
-          input[type='checkbox'] { margin-right: .5em; }
-  </replace>
+  <copy css:theme="head style">
+      body { padding-top: 80px; }
+      button + button { margin-left: .5em; }
+      .ploneCalendar { width: 100%; }
+      .ploneCalendar th { text-align: left; }
+      .ploneCalendar td { text-align: right; }
+      .ploneCalendar td[class*=today] { font-size: 150%; }
+      .calendarHeader { text-align: center; }
+      .criteria > select, .criteria > input, .criteria > button, .criteria > div { float: left; margin: 0; }
+      .criteria > div:first-child { float: none; margin: 1em 0; }
+      .criteria, .sortingField { clear: both; }
+      .hiddenStructure { display: block; background: transparent; background-image: none; border: none; height: 0.1em; overflow: hidden; padding: 0; margin: -0.1em 0 0 -0.1em; width: 1px; position: absolute; }
+      #content .searchField[type='text'] { margin: 0 .5em 0 0; }
+      #content .searchPage { margin: 0 .5em 0 0; }
+      #calendar-previous { float: left; }
+      #calendar-next { float: right; }
+      #calendar-previous, #calendar-next { text-decoration: none; }
+      #searchbox_currentfolder_only_label { margin: 5px; }
+      #portal-columns, #portal-header { margin-bottom: 2em; }
+      #kss-spinner { display: none; }
+      input[type='checkbox'] { margin-right: .5em; }
+  </copy>
 
   <!-- Body rules
        ================================================================== -->
-  <replace css:content="#portal-logo > img">
-      <img src="++theme++bootstrap-framework/plone/logo/white/plone-logo-56.png"/>
-  </replace>
-       
+  <xi:include href="++theme++plone/rules/logo/white-56.xml"/>
+
   <xi:include href="++theme++bootstrap-framework/rules/header.xml"/>
   <xi:include href="++theme++bootstrap-framework/rules/grid.xml"/>
   <xi:include href="++theme++bootstrap-framework/rules/columns.xml"/>
