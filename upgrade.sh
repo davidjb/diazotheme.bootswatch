@@ -10,8 +10,8 @@ fi
 
 version="$1"
 echo "Downloading Bootswatch $version"
-wget https://github.com/thomaspark/bootswatch/archive/v$version.zip -O bootstrap.zip
-unzip -o bootstrap.zip
+wget https://github.com/thomaspark/bootswatch/archive/v$version.zip -O bootswatch.zip
+unzip -o bootswatch.zip
 for theme in diazotheme/bootswatch/*; 
 do 
 	new_theme="bootswatch-$version/`basename $theme`"
@@ -23,4 +23,4 @@ do
 	fi
 done
 echo "Cleaning up"
-rm -rf bootstrap.zip "bootswatch-$version"
+rm -rf bootswatch.zip "bootswatch-$version"
