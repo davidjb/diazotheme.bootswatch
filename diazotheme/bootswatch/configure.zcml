@@ -7,8 +7,8 @@
 
   <five:registerPackage package="." />
 
-  <plone:static directory="amalia" name="amalia" type="theme" />
-  <plone:static directory="amalia-narrow" name="amalia-narrow" type="theme" />
+  <plone:static directory="amelia" name="amelia" type="theme" />
+  <plone:static directory="amelia-narrow" name="amelia-narrow" type="theme" />
   <plone:static directory="cerulean" name="cerulean" type="theme" />
   <plone:static directory="cerulean-narrow" name="cerulean-narrow" type="theme" />
   <plone:static directory="cosmo" name="cosmo" type="theme" />
@@ -45,10 +45,10 @@
   -->
   <!-- Don't see an application with standard plone yet -->
 
-  <!-- Amalia -->
+  <!-- Amelia -->
   <!-- Cerulean 
-  <plone:static directory="amalia-hero" name="amalia_hero" type="theme" />
-  <plone:static directory="amalia-marketing" name="amalia_marketing" type="theme" />
+  <plone:static directory="amelia-hero" name="amelia_hero" type="theme" />
+  <plone:static directory="amelia-marketing" name="amelia_marketing" type="theme" />
 
   <plone:static directory="cerulean-hero" name="cerulean_hero" type="theme" />
   <plone:static directory="cerulean-marketing" name="cerulean_marketing" type="theme" />

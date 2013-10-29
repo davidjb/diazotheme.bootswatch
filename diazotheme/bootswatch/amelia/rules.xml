@@ -17,7 +17,7 @@
 
   <!-- Framework styles -->
   <replace css:theme="head link[href*='bootstrap.css']">
-      <link href="++theme++amalia/css/bootstrap.min.css" rel="stylesheet"/>
+      <link href="++theme++amelia/css/bootstrap.min.css" rel="stylesheet"/>
   </replace>
 
   <!-- Style -->
