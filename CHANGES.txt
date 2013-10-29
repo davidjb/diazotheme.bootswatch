@@ -4,7 +4,9 @@ Changelog
 1.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Ensure CSS included in themes via Diazo rules is not escaped.
+  This previously rendered ">" characters as their HTML entity in CSS.
+  [davidjb]
 
 1.0dev (unreleased)
 ------------------
