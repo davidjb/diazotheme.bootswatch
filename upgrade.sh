@@ -1,26 +1,21 @@
 #!/bin/bash
 
-if [ -z $1 ] || [ $1 == "--help" ] || [ $1 == "-h" ];
+if [ "$1" == "--help" ] || [ "$1" == "-h" ];
 then
-	echo "Usage: $0 [version]"
-	echo "Upgrades this package to the given version of themes."
-	echo "For example, run '$0 2.3.2' to upgrade to version 2.3.2."
+	echo "Usage: $0"
+	echo "Upgrades ths package to the latest version of Bootswatch 2 themes."
 	exit
 fi
 
 version="$1"
-echo "Downloading Bootswatch $version"
-wget https://github.com/thomaspark/bootswatch/archive/v$version.zip -O bootswatch.zip
-unzip -o bootswatch.zip
+echo "Downloading latest Bootswatch"
 for theme in diazotheme/bootswatch/*; 
 do 
-	new_theme="bootswatch-$version/`basename $theme`"
-	if [ -d $theme ] && [ -d $new_theme ]; 
+	theme_id="`basename $theme`"
+	if [ -d $theme ] && [ -d $theme/css ]; 
 	then 
-		cp -f $new_theme/bootstrap.css $theme/css/bootstrap.css
-		cp -f $new_theme/bootstrap.min.css $theme/css/bootstrap.min.css
-		echo "Upgraded `basename $theme` to $version"
+		wget http://bootswatch.com/2/$theme_id/bootstrap.css -O $theme/css/bootstrap.css
+		wget http://bootswatch.com/2/$theme_id/bootstrap.min.css -O $theme/css/bootstrap.min.css
+		echo "Upgraded $theme_id to latest version."
 	fi
 done
-echo "Cleaning up"
-rm -rf bootswatch.zip "bootswatch-$version"

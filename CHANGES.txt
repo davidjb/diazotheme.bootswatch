@@ -4,6 +4,8 @@ Changelog
 1.0 (unreleased)
 ------------------
 
+- Add upgrade script to pull latest versions from Bootswatch.
+  [davidjb]
 - Fix typo in name of Amelia theme.
   [davidjb]
 - Ensure CSS included in themes via Diazo rules is not escaped.
