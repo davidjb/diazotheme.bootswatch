@@ -16,6 +16,7 @@ do
 	then 
 		wget http://bootswatch.com/2/$theme_id/bootstrap.css -O $theme/css/bootstrap.css
 		wget http://bootswatch.com/2/$theme_id/bootstrap.min.css -O $theme/css/bootstrap.min.css
+		sed -i 's#../img/#../../++theme++bootstrap-framework/img/#g' $theme/css/bootstrap.css $theme/css/bootstrap.min.css
 		echo "Upgraded $theme_id to latest version."
 	fi
 done

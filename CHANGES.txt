@@ -4,6 +4,9 @@ Changelog
 1.0 (unreleased)
 ------------------
 
+- Modify all theme CSS to use relative paths to Plone's shared
+  Bootstrap theme resources.  See README for more information.
+  [davidjb]
 - Add upgrade script to pull latest versions from Bootswatch.
   [davidjb]
 - Fix typo in name of Amelia theme.
