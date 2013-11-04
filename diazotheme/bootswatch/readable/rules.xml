@@ -16,7 +16,7 @@
 
   <!-- Framework styles -->
   <replace css:theme="head link[href*='bootstrap.css']">
-      <link href="++theme++readable/css/bootstrap.min.css" rel="stylesheet"/>
+      <link href="{$base}/++theme++readable/css/bootstrap.min.css" rel="stylesheet"/>
   </replace>
 
   <!-- Style -->
@@ -65,7 +65,7 @@
   <drop css:theme-children="body"/>
   <before css:theme-children="body" css:content-children="body"/>
   <after css:theme-children="body">
-      <script src="++theme++bootstrap-framework/js/bootstrap.min.js"></script>
+      <script src="{$base}/++theme++bootstrap-framework/js/bootstrap.min.js"></script>
   </after>
 
 </rules>
