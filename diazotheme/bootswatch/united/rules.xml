@@ -5,6 +5,16 @@
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"    
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
+   <!-- AJAX: Folder listings -->
+   <rules css:if-content="body > #folderlisting-main-table">
+    <xi:include href="++theme++bootstrap-framework/rules/edit.xml"/>
+    <xi:include href="++theme++bootstrap-framework/rules/forms.xml"/>
+   </rules>
+   <!-- AJAX: Search page results -->
+   <rules css:if-content="body > #updated-search-results-number">
+    <xi:include href="++theme++bootstrap-framework/rules/general.xml"/>
+   </rules>
+
   <!-- The condition makes sure that theme is only applied when served in the 
        plone main_template. This is necessary for functional edit popups in 
        Tiny, for example. -->
